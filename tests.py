@@ -29,7 +29,7 @@ def login(email):
     ap_legal_agreement_check_box = browser.find_element(By.CSS_SELECTOR, '#ap_legal_agreement_check_box')  # 定义阅读声明按钮
     ap_legal_agreement_check_box.click()  # 点击动作
     continue_button = browser.find_element(By.CSS_SELECTOR, '#continue')  # 定义继续按钮
-    continue_button.click()  # 点击动作
+    continue_button.click()
     page = browser.page_source  # 保存源码
 
     if "我们找不到具有该电子邮件地址的账户" in page:
