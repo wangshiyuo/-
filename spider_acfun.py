@@ -75,7 +75,7 @@ class Spider:
         if os.path.exists(self.path) is False:
             os.mkdir(self.path)    # 生成下载存放目录
         tasks = [self.parse_page(self.page_url.format(i)) for i in range(1, self.page)]
-        await asyncio.wait(tasks)
+        await asyncio.wait(tasks) # 运行
 
 
 if __name__ == '__main__':
